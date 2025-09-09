@@ -1,0 +1,5 @@
+.DS_Store
+.thumbs
+/node_modules
+yarm-error.log
+/dev-build
