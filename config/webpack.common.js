@@ -20,6 +20,8 @@ module.exports = {
         test: /\.(js|jsx)$/i,
         exclude: /node_modules/,
         use: {
+          // 'style-loader',
+          // 'css-loader',
           loader: "babel-loader",
           options: {
             presets: ["@babel/peset-env", "@babel/preset-react"],

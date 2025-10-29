@@ -9,12 +9,12 @@ function createPages(template, filename) {
 
 const htmlPages = [
   createPages("./src/index.html", "./index.html"),
-  createPages("./src/pages/articles.html", "./pages/articles.html"),
+  createPages("./src/pages/catalog.html", "./pages/catalog.html"),
   createPages("./src/pages/tests.html", "./pages/tests.html"),
-  createPages("./src/pages/dictionary.html", "./pages/dictionary.html"),
+  createPages("./src/pages/trends.html", "./pages/trends.html"),
   createPages(
-    "./src/pages/articles/plants.html",
-    "./pages/articles/plants.html"
+    "./src/pages/tests/test1.html",
+    "./pages/tests/test1.html"
   ),
   createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html"),
 ];

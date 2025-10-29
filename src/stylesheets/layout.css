@@ -1,19 +1,199 @@
+html {
+  font-size: calc(1vw / 14.4);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: "PT Root UI", Arial, Helvetica, sans-serif;
+  font-family: "Akzidenz-Grotesk Pro", Arial, Helvetica, sans-serif;
+  font-size: 20rem;
+  background-color: #212121;
+  overflow-x: hidden;
 }
 
-h1 {
-  font-weight: 700;
+
+/*Заглушка*/
+.logo{
+  background-color: #6E6E6E;
+  width: 100vw;
+  height: 50%;
+  padding: 1vw;
+  display: flex;
+  justify-content: space-between;
 }
 
-h3 {
+.logo-img{
+  width: 12vw;
+  height: auto;
+  margin-left: 2vw;
+}
+
+.logo-img-txt{
+  width: 19vw;
+  height: auto;
+  margin-right: 2vw;
+}
+
+.menu{
+  width: 100vw;
+  border-bottom: 3px solid #ffffff;
+  border-top: 3px solid #ffffff ;
+}
+.menu ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1vw;
+  text-transform: uppercase;
+}
+
+.menu a{
+  text-decoration: none;
+  color: white;
+}
+
+.zagluska-img{
+  position: absolute;
+}
+
+.esc{
+  position: absolute;
+  width: 22vw;
+  height: auto;
+  margin-top: 5vw;
+}
+
+.system{
+  position: absolute;
+  width: 13vw;
+  height: auto;
+  margin-left: 58vw;
+}
+
+.hammer{
+  position: absolute;
+  width: 25vw;
+  height: auto;
+  margin-left: 20vw;
+  margin-top: 30vw;
+}
+
+.chemistry{
+  position: absolute;
+  width: 20vw;
+  height: auto;
+  margin-left: 68vw;
+  margin-top: 30vw;
+}
+
+.back-form{
+  position: absolute;
+  z-index: 100;
+  text-align: center;
+  margin-top: 10vw;
+  margin-left: 20vw;
+}
+
+.logo-centre{
+  width: 15vw;
+  height: auto;
+  position: absolute;
+  z-index: 400;
+  margin-top: 13vw;
+  margin-left: 44vw;
+}
+
+div h1, p, span{
+  color: white;
+}
+
+.subtitle{
+  font-family: "Druk Wide Cyr", Arial, Helvetica, sans-serif;
+  font-size: 20rem;
+}
+
+
+.form{
+
+}
+
+.form-img{
+  position: absolute;
+  z-index: 200;
+  width: 36vw;
+  height: auto;
+  margin-left: 34vw;
+  margin-top: 23vw;
+}
+
+h2{
+  position: absolute;
+  font-family: "Druk Wide Cyr", Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 15rem;
+  color: white;
+  margin-top: 24vw;
+  margin-left: 35.2vw;
+  z-index: 300;
+}
+
+
+p{
+  position: absolute;
+  font-family: "Akzidenz-Grotesk Pro", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  z-index: 400;
+  text-transform: uppercase;
+  font-size: 12rem;
+  margin-left: 35.2vw;
+  margin-top: 29vw;
+}
+
+#my-form{
+  position: absolute;
+  margin-left: 35vw;
+  margin-top: 30.5vw;
+  z-index: 500;
+
+}
+
+input{
+  background-color: #6E6E6E;
+  border: #6E6E6E;
+  width: 30vw;
+  height: 2.5vw;
+}
+
+.email-input::placeholder{
+  color: #ffffff;
+  font-family: "Akzidenz-Grotesk Pro", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  opacity: 50%;
+  padding: 1vw;
+}
+
+.submit-btn{
+  background-color: #6E6E6E;
+  color: #ffffff;
+  border: #6E6E6E;
+  width: 4vw;
+  height: 2.5vw;
+  font-family: "Akzidenz-Grotesk Pro", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
 
-h5 {
-  font-weight: 400;
-}
-
-p {
-  font-weight: 300;
+.tg-link{
+  position: absolute;
+  font-family: "Akzidenz-Grotesk Pro", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  z-index: 400;
+  text-decoration: none;
+  color: white;
+  background-color: #6E6E6E;
+  padding: 1vw  2.5vw;
+  margin-left: 44.1vw;
+  margin-top: 38vw;
 }

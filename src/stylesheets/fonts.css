@@ -25,3 +25,24 @@
     url("../fonts/pt-root-ui_light.woff2");
   font-weight: 300;
 }
+
+@font-face {
+  font-family: "Akzidenz-Grotesk Pro";
+  src: url("../fonts/akzidenzgroteskpro_regular.ttf"),
+  url("../fonts/akzidenzgroteskpro_regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Akzidenz-Grotesk Pro";
+  src: url("../fonts/akzidenzgroteskpro_ext.otf"),
+  url("../fonts/akzidenzgroteskpro_ext.otf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Druk Wide Cyr";
+  src: url("../fonts/drukwidecyr-bold.otf"),
+  url("../fonts/drukwidecyr-bold.otf");
+  font-weight: 700;
+}
