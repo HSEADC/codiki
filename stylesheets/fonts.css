@@ -1,0 +1,12 @@
+@font-face {
+  font-family: "Akzidenz-Grotesk Pro";
+  src: url("../fonts/AkzidenzGroteskPro-LightEx.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Druk Wide Cyr";
+  src: url("../fonts/drukwidecyr-medium.otf"),
+    url("../fonts/drukwidecyr-medium.otf");
+  font-weight: 700;
+}
