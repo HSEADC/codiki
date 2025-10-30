@@ -1,7 +1,7 @@
 {
   "name": "b24ds08",
   "version": "1.0.0",
-  "author": "valeria",
+  "author": "Anna Komkova",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
