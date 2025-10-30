@@ -1,63 +1,49 @@
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
-const htmlPages = require('./webpack.pages.js')
-
-const webpack = require('webpack')
-const path = require('path')
+// config/webpack.prod.js
+const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 
 module.exports = {
-  entry: {
-    index: './src/javascripts/index.js'
-  },
+  mode: 'production',
+  entry: './src/index.js',
   output: {
-    filename: '[name].js',
-    path: path.resolve('.', 'docs')
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'docs'), 
+    clean: true, 
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/i,
-        exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react']
-          }
-        }
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+        ]
       },
       {
-        test: /\.css$/,
-        exclude: /node_modules/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
-      },
-      {
-        test: /\.html$/i,
-        loader: 'html-loader'
-      },
-      {
-        test: /\.(png|jpg|jpeg|gif|svg)$/i,
+        test: /\.(png|jpe?g|gif|svg|webp)$/i,
         type: 'asset/resource',
         generator: {
-          filename: 'images/[hash][ext][query]'
-        }
-      },
-      {
-        test: /\.(ttf|otf|woff|woff2)$/i,
-        type: 'asset/resource',
-        generator: {
-          filename: 'fonts/[hash][ext][query]'
+          filename: 'assets/images/[name].[hash:8][ext]'
         }
       }
     ]
   },
-  plugins: [new MiniCssExtractPlugin(), ...htmlPages],
   optimization: {
-    minimizer: [new CssMinimizerPlugin()]
+    minimizer: [
+      `...`, 
+      new CssMinimizerPlugin()
+    ]
   },
-  resolve: {
-    fallback: {
-      stream: require.resolve('stream-browserify')
-    }
-  }
-}
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      minify: {
+        removeComments: true,
+        collapseWhitespace: true
+      }
+    }),
+    new MiniCssExtractPlugin({
+      filename: 'assets/css/[name].[contenthash:8].css'
+    })
+  ]
+};

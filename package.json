@@ -1,7 +1,7 @@
 {
   "name": "b24ds08",
   "version": "1.0.0",
-  "author": "Anna Komkova",
+  "author": "valeria",
   "license": "MIT",
   "scripts": {
     "start": "webpack serve --open --config config/webpack.dev.js",
@@ -28,7 +28,7 @@
     "stream-browserify": "^3.0.0",
     "style-loader": "^4.0.0",
     "terser-webpack-plugin": "^5.3.14",
-    "webpack": "^5.101.1",
+    "webpack": "^5.102.1",
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.2",
     "webpack-merge": "^6.0.1"

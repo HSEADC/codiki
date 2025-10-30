@@ -1,54 +1,63 @@
-import "./stylesheets/style.css";
-console.log("hey");
-// document.addEventListener("DOMContentLoaded", function () {
-//   const parallaxContainer = document.querySelector(".zagluska-img");
-//   const parallaxItems = document.querySelectorAll(".parallax-item");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
+const htmlPages = require('./webpack.pages.js')
 
-//   let containerCenterX = 0;
-//   let containerCenterY = 0;
+const webpack = require('webpack')
+const path = require('path')
 
-//   function updateContainerSize() {
-//     const rect = parallaxContainer.getBoundingClientRect();
-//     containerCenterX = rect.left + rect.width / 2;
-//     containerCenterY = rect.top + rect.height / 2;
-//   }
-
-//   function handleMouseMove(e) {
-//     const mouseX = e.clientX;
-//     const mouseY = e.clientY;
-
-//     const moveX = mouseX - containerCenterX;
-//     const moveY = mouseY - containerCenterY;
-
-//     parallaxItems.forEach((item) => {
-//       const depth = parseFloat(item.getAttribute("data-depth"));
-//       const rotation = parseFloat(item.getAttribute("data-rotation"));
-
-//       // Уменьшаем смещение
-//       const offsetX = moveX * depth * 0.3;
-//       const offsetY = moveY * depth * 0.3;
-
-//       // Уменьшаем вращение
-//       const rotateX = (moveY / window.innerHeight) * 5 * rotation;
-//       const rotateY = (moveX / window.innerWidth) * 5 * rotation;
-
-//       item.style.transform = `
-//                 translate(${offsetX}px, ${offsetY}px)
-//                 rotateX(${rotateX}deg)
-//                 rotateY(${rotateY}deg)
-//             `;
-//     });
-//   }
-
-//   function initParallax() {
-//     updateContainerSize();
-//     window.addEventListener("resize", updateContainerSize);
-//     window.addEventListener("mousemove", handleMouseMove);
-
-//     parallaxItems.forEach((item) => {
-//       item.style.transition = "transform 0.15s ease-out";
-//     });
-//   }
-
-//   initParallax();
-// });
+module.exports = {
+    entry: {
+        index: './src/javascripts/index.js'
+    },
+    output: {
+        filename: '[name].js',
+        path: path.resolve('.', 'docs')
+    },
+    module: {
+        rules: [
+            {
+                test: /\.(js|jsx)$/i,
+                exclude: /node_modules/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env', '@babel/preset-react']
+                    }
+                }
+            },
+            {
+                test: /\.css$/,
+                exclude: /node_modules/,
+                use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+            },
+            {
+                test: /\.html$/i,
+                loader: 'html-loader'
+            },
+            {
+                test: /\.(png|jpg|jpeg|gif|svg)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'images/[hash][ext][query]'
+                }
+            },
+            {
+                test: /\.(ttf|otf|woff|woff2)$/i,
+                type: 'asset/resource',
+                generator: {
+                    filename: 'fonts/[hash][ext][query]'
+                }
+            }
+        ]
+    },
+    plugins: [new MiniCssExtractPlugin(), ...htmlPages],
+    optimization: {
+        minimizer: [new CssMinimizerPlugin()]
+    },
+    resolve: {
+        fallback: {
+            stream: require.resolve('stream-browserify')
+        }
+    }
+}
