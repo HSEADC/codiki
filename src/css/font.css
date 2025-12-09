@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Akzidenzgroteskpro';
+  src: url('../fonts/akzidenzgroteskpro_regular.ttf'),
+    url('../fonts/akzidenzgroteskpro_regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Akzidenzgroteskpro';
+  src: url('../fonts/drukwidecyr-medium.otf'),
+    url('../fonts/drukwidecyr-medium.otf');
+  font-weight: 600;
+}
