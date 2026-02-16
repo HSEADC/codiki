@@ -10,7 +10,11 @@ body {
   font-weight: 600;
   background-color: #ffffff;
   color: #000;
-  overflow-x: hidden;
+
+}
+
+html::-webkit-scrollbar {
+  display: none;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -26,7 +30,7 @@ ul { list-style: none; }
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #fdfdfd;
 }
 
 .hero-logo {
@@ -192,21 +196,21 @@ ul { list-style: none; }
 
 .top-content-grid {
   display: flex;
-  gap: 40px;
-  margin-bottom: 60px;
+  gap: 3vw;
+  margin-bottom: 2vw;
   align-items: stretch;
 }
 
 
 .categories-list {
-  flex: 0 0 300px;
+  flex: 0 0 30vw;
   border: 1px solid #000;
   display: flex;
   flex-direction: column;
 }
 
 .cat-item {
-  padding: 15px 20px;
+  padding: 1.3vw 1vw;
   border-bottom: 1px solid #000;
   font-weight: 700;
   font-size: 14px;
@@ -238,13 +242,12 @@ ul { list-style: none; }
 .promo-banner {
   flex: 1;
 
-  background: linear-gradient(135deg, #ff9a9e 0%, #ff5e62 100%);
-  padding: 40px;
+  /*background: linear-gradient(135deg, #ff9a9e 0%, #ff5e62 100%);*/
+  padding: 1.2vw;
   position: relative;
   border-radius: 4px;
   overflow: hidden;
   transition: background 0.3s ease;
-
   display: flex;
   justify-content: space-between;
 }
@@ -252,10 +255,9 @@ ul { list-style: none; }
 .banner-content {
   position: relative;
   z-index: 2;
-  max-width: 60%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: end;
 }
 
 .promo-banner h2 {
@@ -265,9 +267,11 @@ ul { list-style: none; }
   font-weight: 900;
 }
 
-.steps p, #banner-desc {
+
+
+.steps p, #banner-desc p {
   font-family: 'Akzidenzgroteskpro', sans-serif;
-  font-size: 1vw;
+  font-size: 1.3vw;
   margin-bottom: 10px;
   font-weight: 400;
   line-height: 1.5;
@@ -281,7 +285,7 @@ ul { list-style: none; }
   font-size: 12px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 10vw;
+  margin-top: 9vw;
   border: none;
   cursor: pointer;
   width: fit-content;
@@ -290,11 +294,11 @@ ul { list-style: none; }
 
 
 .computer-img-placeholder img{
-  width: 25vw;
-  height: auto;
+  width: 100%;
+  height: 150vw;
   opacity: 0.8;
   position: absolute;
-  right: -1vw;
+  right: 2vw;
   top: 50%;
   transform: translateY(-50%);
   z-index: 1;
@@ -305,21 +309,11 @@ ul { list-style: none; }
 
 
 .banner-image {
-  width: 100%;
-  height: auto;
-  max-height: 100%;
+  width: 100vw;
   object-fit: contain;
-
-
   transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   transform-origin: center center;
 }
-
-.banner-image {
-  transition: transform 0.4s ease;
-  transform-origin: center center;
-}
-
 
 .zoom-active {
   transform: scale(1.5);
@@ -329,8 +323,6 @@ ul { list-style: none; }
 .scale-up {
   transform: scale(1.3) rotate(-5deg);
 }
-
-
 
 
 
@@ -481,11 +473,11 @@ ul { list-style: none; }
 }
 
 .footer-logo img{
-  width: 10vw;
+  width: 9vw;
 }
 
 .footer-line {
-  width: 20px;
+  width: 3vw;
   flex-grow: 1;
   height: 1px;
   background: #000;
@@ -870,9 +862,6 @@ a { text-decoration: none; color: inherit; }
 }
 
 
-
-
-
 .back-link {
   font-weight: 800;
   font-size: 18px;
@@ -1105,7 +1094,6 @@ width: 10vw;
 /* --- Главная Сетка (Grid Layout) --- */
 .ax-layout {
   display: grid;
-  /* Левая колонка | Центр (растягивается) | Правая колонка */
   grid-template-columns: var(--ax-sidebar-w) 1fr var(--ax-right-w);
   height: 100vh;
   max-width: 1920px;
@@ -1119,7 +1107,6 @@ width: 10vw;
   display: flex;
   flex-direction: column;
   height: 100%;
-  /* Если меню очень длинное, скролл появится только тут */
   overflow-y: auto;
   border-right: 1px solid transparent; /* Можно добавить border при желании */
 }
@@ -1132,7 +1119,6 @@ width: 10vw;
 }
 
 .ax-logo {
-  font-family: var(--ax-font-head);
   font-weight: 800;
   font-size: 42px;
   letter-spacing: -2px;
@@ -1140,14 +1126,13 @@ width: 10vw;
 }
 
 .ax-nav__list { list-style: none; margin-top: 40px; }
-.ax-nav__item { margin-bottom: 20px; font-family: var(--ax-font-head); font-weight: 700; text-transform: uppercase; font-size: 14px; display: flex; align-items: center; }
+.ax-nav__item { margin-bottom: 20px; font-weight: 700; text-transform: uppercase; font-size: 14px; display: flex; align-items: center; }
 .ax-nav__link { text-decoration: none; color: inherit; transition: 0.2s; }
 .ax-nav__link:hover { color: var(--ax-blue); }
 .ax-bracket { opacity: 0; margin: 0 4px; transition: opacity 0.2s; }
 .ax-nav__item--active .ax-bracket { opacity: 1; }
 
 .ax-slogan {
-  font-family: var(--ax-font-head);
   font-size: 12px;
   line-height: 1.4;
   font-weight: 700;
@@ -1155,14 +1140,15 @@ width: 10vw;
   margin-top: auto;
 }
 
-/* --- Центральная Колонка (Основной Скролл) --- */
+
 .ax-center-scroll {
   height: 100vh;
-  overflow-y: scroll; /* Основной скролл страницы здесь */
+  overflow-y: scroll;
+  overflow-x: hidden;
   padding: 40px 60px;
-  /* Скрываем скроллбар для эстетики (опционально) */
+  margin-left: -2.5vw;
   scrollbar-width: thin;
-  scrollbar-color: #ccc transparent;
+  scrollbar-color: #ffffff transparent;
 }
 
 .ax-center-scroll::-webkit-scrollbar { width: 6px; }
@@ -1177,26 +1163,28 @@ width: 10vw;
 .ax-header { margin-bottom: 50px; }
 .ax-back-link {
   text-decoration: none; color: var(--ax-text);
-  font-family: var(--ax-font-head); font-weight: 700; font-size: 24px;
+ font-weight: 700; font-size: 24px;
   display: flex; align-items: center; gap: 10px;
 }
 
 /* Статья */
-.ax-hero-title {
-  font-family: var(--ax-font-head);
-  font-size: 64px;
-  font-weight: 700;
+.ax-hero-title, .ax-section-title {
+  font-size: 2.7vw;
+  font-weight: 600;
   margin-bottom: 30px;
 }
 .ax-brace { font-weight: 300; }
 
-.ax-intro-text {
-  font-size: 16px; line-height: 1.6; margin-bottom: 50px;
+.ax-intro-text, .ax-list-checked, .ax-text, .ax-professions-list {
+  font-family: 'Akzidenzgroteskpro', sans-serif !important;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 1.2vw;
+  margin-bottom: 50px;
 }
 
-.ax-section { margin-bottom: 60px; }
+.ax-section { margin-bottom: 3vw; }
 .ax-section-title {
-  font-family: var(--ax-font-head);
   font-size: 32px;
   font-weight: 800;
   margin-bottom: 25px;
@@ -1217,13 +1205,16 @@ width: 10vw;
   font-size: 16px;
 }
 .ax-list-checked li::before {
-  content: '➔'; color: var(--ax-blue); position: absolute; left: 0; font-weight: bold;
+  content: '➔'; color: #5BB2FF;
+  position: absolute;
+  left: 0;
+  font-weight: bold;
 }
 
 .ax-professions-list ul { list-style: none; }
 .ax-professions-list li { margin-bottom: 10px; }
 .ax-professions-list a {
-  color: var(--ax-text);
+  color: #000000;
   text-decoration: underline;
   text-underline-offset: 4px;
   transition: color 0.2s;
@@ -1242,13 +1233,13 @@ width: 10vw;
 }
 .ax-logo--footer { font-size: 48px; }
 .ax-footer__mid-text {
-  font-family: var(--ax-font-head); font-weight: 700; font-size: 14px;
+  font-weight: 700; font-size: 14px;
   margin-left: 20px; display: inline-block; max-width: 200px;
 }
 .ax-footer__buttons { display: flex; gap: 10px; }
 .ax-btn-black {
   background: #1a1a1a; color: #fff; padding: 12px 20px;
-  text-decoration: none; font-family: var(--ax-font-head);
+  text-decoration: none;
   font-size: 12px; font-weight: 700; border-radius: 8px;
   transition: background 0.2s;
 }
@@ -1260,20 +1251,14 @@ width: 10vw;
   padding: 60px 40px;
   height: 100%;
   position: relative;
-  /* Делаем её "статичной", чтобы контент не уезжал */
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* 3D Курсор */
-.ax-cursor-3d {
-  position: absolute;
-  top: 50px;
-  left: 20px;
-  transform: rotate(-15deg);
-  z-index: 10;
-  filter: drop-shadow(5px 5px 0px rgba(0,0,0,0.1));
+.ax-cursor-3d img {
+  width: 8vw;
 }
 
 /* Виджет заметок */
@@ -1289,7 +1274,8 @@ width: 10vw;
   margin-bottom: 15px;
 }
 .ax-widget-header h3 {
-  font-family: var(--ax-font-head); font-weight: 800; font-size: 24px;
+  font-weight: 800;
+  font-size: 24px;
 }
 
 /* Декоративные уголки */
@@ -1307,7 +1293,7 @@ width: 10vw;
   border-top: none;
   margin: -15px 5px 20px 5px;
   padding: 30px 10px;
-  min-height: 250px;
+  min-height: 10vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1323,7 +1309,9 @@ width: 10vw;
   display: inline-block;
 }
 .ax-pill-blue {
-  background: var(--ax-blue); color: #fff; border-color: var(--ax-blue); box-shadow: none;
+  color: #000000;
+  border-color: var(--ax-blue);
+  box-shadow: none;
 }
 .ax-rotate-left { transform: rotate(-3deg); }
 .ax-rotate-right { transform: rotate(2deg); }
@@ -1332,21 +1320,21 @@ width: 10vw;
 
 .ax-btn-save {
   width: 100%;
-  background: var(--ax-blue);
-  color: #fff;
+  margin-top: 0.5vw;
+  font-family: 'Druk Wide Cyr', sans-serif !important;
+  background: #358be6;
+  color: #000000;
   border: none;
   padding: 15px;
   border-radius: 8px;
-  font-weight: 700;
+  font-size: 1vw;
+  font-weight: 600;
   cursor: pointer;
   text-transform: uppercase;
 }
 .ax-btn-save:hover { background: #358be6; }
 
-
-
 /*test*/
-/* --- НАСТРОЙКИ И ПЕРЕМЕННЫЕ --- */
 .ax-layout {
   display: grid;
   grid-template-columns: var(--w-sidebar) 1fr var(--w-right);
@@ -1363,14 +1351,12 @@ width: 10vw;
   height: 100%;
 }
 .ax-logo {
-  font-family: var(--font-head);
   font-weight: 800;
   font-size: 48px;
   letter-spacing: -2px;
 }
 .ax-menu ul { list-style: none; }
 .ax-menu li {
-  font-family: var(--font-head);
   font-weight: 700;
   font-size: 14px;
   margin-bottom: 24px;
@@ -1385,14 +1371,12 @@ width: 10vw;
 .ax-menu li.active .bracket { opacity: 1; }
 
 .ax-slogan {
-  font-family: var(--font-head);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   line-height: 1.4;
 }
 
-/* --- Центральная часть (Скролл) --- */
 .ax-main-scroll {
   height: 100vh;
   overflow-y: auto;
@@ -1410,7 +1394,8 @@ width: 10vw;
 
 .ax-header { margin-bottom: 30px; }
 .ax-back-link {
-  font-family: var(--font-head); font-weight: 700; font-size: 20px;
+  font-weight: 700;
+  font-size: 20px;
   text-decoration: none; color: var(--text-color);
 }
 
@@ -1418,8 +1403,7 @@ width: 10vw;
 .ax-quiz-area { flex-grow: 1; }
 
 .ax-title-wrap {
-  font-family: var(--font-head);
-  font-size: 1.5rem; /* Чуть меньше для аккуратности */
+  font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 40px;
   display: flex;
@@ -1429,7 +1413,7 @@ width: 10vw;
 .ax-brace { font-weight: 300; font-size: 1.2em; }
 
 .ax-question-text {
-  font-family: var(--font-head);
+
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 30px;
@@ -1452,7 +1436,7 @@ width: 10vw;
 }
 .ax-option input { display: none; }
 
-/* КВАДРАТ С БУКВОЙ И УГОЛКАМИ */
+
 .ax-letter-box {
   width: 44px;
   height: 44px;
@@ -1460,13 +1444,12 @@ width: 10vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-head);
   font-weight: 700;
   font-size: 16px;
   transition: all 0.2s ease;
 }
 
-/* Уголки (Corners) - через абсолютные элементы */
+
 .corner {
   position: absolute;
   width: 8px;
@@ -1481,21 +1464,26 @@ width: 10vw;
 
 /* Состояние: ВЫБРАН */
 .ax-option input:checked + .ax-letter-box {
-  background-color: var(--theme-color); /* Берет текущий цвет темы */
+  background-color: var(--theme-color);
   color: #000000;
   border-radius: 6px;
 }
 .ax-option input:checked + .ax-letter-box .corner {
-  opacity: 0; /* Скрываем уголки при заливке */
+  opacity: 0;
 }
 .ax-option-text { font-size: 15px; }
 
 /* Кнопки навигации */
 .ax-nav-btns { display: flex; gap: 10px; margin-top: 20px; }
 .ax-btn {
-  border: none; padding: 12px 24px; border-radius: 6px;
-  font-family: var(--font-head); font-weight: 700; font-size: 12px;
-  text-transform: uppercase; cursor: pointer; transition: 0.2s;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.2s;
 }
 .ax-btn-prev { background: #e0e0e0; color: #888; }
 .ax-btn-prev:hover { background: #ccc; color: #000; }
@@ -1511,17 +1499,20 @@ width: 10vw;
   margin-top: 80px; padding-top: 30px;
   display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 20px;
 }
-.ax-logo-lg { font-family: var(--font-head); font-size: 40px; font-weight: 800; }
-.ax-footer-text { font-family: var(--font-head); font-weight: 700; font-size: 12px; max-width: 200px; text-transform: uppercase; }
+.ax-logo-lg { font-size: 40px; font-weight: 800; }
+.ax-footer-text { font-weight: 700; font-size: 12px; max-width: 200px; text-transform: uppercase; }
 .ax-btn-black {
   background: #1a1a1a; color: #fff; text-decoration: none; padding: 10px 16px; border-radius: 6px;
-  font-family: var(--font-head); font-weight: 700; font-size: 11px; display: inline-block;
+  font-weight: 600;
+  font-size: 11px;
+  display: inline-block;
 }
 
 /* --- Правый Сайдбар (Рубрикатор) --- */
 .ax-sidebar-right {
   padding: 40px 20px;
-  display: flex; justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .ax-rubricator {
   display: grid;
@@ -1532,13 +1523,13 @@ width: 10vw;
 .rubric-item {
   position: relative; width: 36px; height: 36px;
   display: flex; align-items: center; justify-content: center;
-  font-family: var(--font-head); font-weight: 700; font-size: 14px;
+  font-weight: 700; font-size: 14px;
   cursor: pointer;
 }
-/* Стили для уголков рубрикатора */
+
 .rubric-item .corner { border-color: #000; }
 
-/* Активный вопрос в рубрикаторе */
+
 .rubric-item.current {
   background-color: var(--theme-color);
   color: #000000; border-radius: 6px;
@@ -1547,33 +1538,34 @@ width: 10vw;
 
 /*result*/
 .ax-result-title {
-  font-family: var(--font-head);
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-/* Блок одного результата (1. IT: 85%) */
+
 .ax-res-item {
   margin-bottom: 50px;
 }
 
 .ax-res-header {
-  font-family: var(--font-head);
+
   font-size: 24px;
   font-weight: 800;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-/* Текст с синей стрелкой */
+
 .ax-res-desc, .ax-res-profs {
   position: relative;
   padding-left: 30px;
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 1.2vw;
   line-height: 1.5;
-  color: var(--text-color);
+  font-family: 'Akzidenzgroteskpro', sans-serif;
+  font-weight: 400;
+  color: black;
 }
 .ax-res-desc::before, .ax-res-profs::before {
   content: '➔';
@@ -1600,7 +1592,6 @@ width: 10vw;
   margin-top: 10px;
   border-radius: 6px;
   text-decoration: none;
-  font-family: var(--font-head);
   font-weight: 700;
   font-size: 12px;
   text-transform: uppercase;
@@ -1612,13 +1603,11 @@ width: 10vw;
 .ax-res-btn:hover { opacity: 0.9; }
 
 /* Цвета для кнопок (модификаторы) */
-.btn-blue { background-color: #4a9eff; color: #fff; }
-.btn-green { background-color: #6cce96; color: #000; } /* Светло-зеленый + черный текст */
-.btn-gray { background-color: #c4cdd5; color: #000; }
+.btn-blue { background-color: #4a9eff; color: #fff; font-family: 'Druk Wide Cyr', sans-serif; font-weight: 700 }
+.btn-green { background-color: #6cce96; color: #000; font-family: 'Druk Wide Cyr', sans-serif; font-weight: 700 }
+.btn-gray { background-color: #c4cdd5; color: #000; font-family: 'Druk Wide Cyr', sans-serif; font-weight: 700 }
 
-/* --- НОВАЯ ПРАВАЯ КОЛОНКА (ДЕКОР + ВИДЖЕТ) --- */
 
-/* Контейнер для летающих 3D объектов */
 .ax-decor-wrapper {
   position: relative;
   height: 200px;
@@ -1649,7 +1638,6 @@ width: 10vw;
   padding: 8px 16px;
   border-radius: 20px;
   display: inline-block;
-  font-family: var(--font-head);
   font-weight: 700;
   font-size: 12px;
   margin-bottom: 15px;
@@ -1686,14 +1674,13 @@ width: 10vw;
 }
 .ax-content-container {
   display: flex;
-  flex-wrap: wrap; /* Разрешаем перенос элементов */
+  flex-wrap: wrap;
   gap: 20px;
   align-items: flex-start;
 }
 
 .main-wrapper {
   display: flex;
-  height: 100vh;
 }
 
 .sidebar {
@@ -1705,7 +1692,6 @@ width: 10vw;
 .main-content {
   flex: 1;
   display: flex;
-  overflow: hidden;
 }
 
 .ax-center-scroll {
@@ -1715,10 +1701,9 @@ width: 10vw;
 
 .ax-sidebar-right {
   flex-shrink: 0;
-  /*width: 320px;*/
 }
 #sidebar-quiz{
-  flex-shrink: 0;  /* ← НЕ сжимается */
+  flex-shrink: 0;
   margin-top: -33vw;
 }
 

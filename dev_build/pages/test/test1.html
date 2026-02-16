@@ -4,61 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Axis - Тестирование</title>
-    <script src="../../0c1dd6a05e188cfcdba6.js"></script>
-    <meta
-            name="title"
-            content="Axis - медиа о профессиях"
-    />
-    <meta
-            name="description"
-            content="Axis помогает разобраться, что происходит в мире работы и какие варианты открыты перед тобой"
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:locale" content="ru_RU" />
-    <meta property="og:site_name" content="Axis" />
-    <meta
-            property="og:url"
-            content=content="https://hseadc.github.io/codiki/"
-    />
-    <meta
-            property="og:title"
-            content="Axis - медиа о профессиях"
-    />
-    <meta
-            property="og:description"
-            content="Axis помогает разобраться, что происходит в мире работы и какие варианты открыты перед тобой"
-    />
-    <meta
-            property="og:image"
-            content="https://raw.githubusercontent.com/hseadc/codiki/refs/heads/main/src/images/meta/og-index.png"
-    />
+    <meta name="title" content="Axis - медиа о профессиях">
+    <meta name="description" content="Axis помогает разобраться, что происходит в мире работы и какие варианты открыты перед тобой">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Axis">
+    <meta property="og:url" content="https://hseadc.github.io/codiki/">
+    <meta property="og:title" content="Axis - медиа о профессиях">
+    <meta property="og:description" content="Axis помогает разобраться, что происходит в мире работы и какие варианты открыты перед тобой">
+    <meta property="og:image" content="https://raw.githubusercontent.com/hseadc/codiki/refs/heads/main/src/images/meta/og-index.png">
 
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta
-            property="twitter:url"
-            content="https://hseadc.github.io/codiki/"
-    />
-    <meta
-            property="twitter:title"
-            content="Axis - медиа о профессиях"
-    />
-    <meta
-            property="twitter:description"
-            content="Axis помогает разобраться, что происходит в мире работы и какие варианты открыты перед тобой"
-    />
-    <meta
-            property="twitter:image"
-            content="https://raw.githubusercontent.com/hseadc/codiki/refs/heads/main/src/images/meta/og-index.png"
-    />
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hseadc.github.io/codiki/">
+    <meta property="twitter:title" content="Axis - медиа о профессиях">
+    <meta property="twitter:description" content="Axis помогает разобраться, что происходит в мире работы и какие варианты открыты перед тобой">
+    <meta property="twitter:image" content="https://raw.githubusercontent.com/hseadc/codiki/refs/heads/main/src/images/meta/og-index.png">
 <script defer src="../../index.js"></script><link href="../../index.css" rel="stylesheet"></head>
 <body>
+<!-- Мобильный хедер -->
 <div class="mobile-header" style="display: none;">
     <div class="mob-logo-icon">axis</div>
     <div class="mob-burger">☰</div>
 </div>
-<div class="main-wrapper">
 
+<div class="main-wrapper">
+    <!-- ЛЕВАЯ ФИКСИРОВАННАЯ КОЛОНКА -->
     <aside class="sidebar">
         <div class="hero-logo">
             <a href="/index.html">
@@ -79,40 +52,78 @@
         </div>
     </aside>
 
-    <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА (Скролл) -->
-    <main class="ax-main-scroll">
-        <div class="ax-content-container">
+    <!-- ОСНОВНОЙ КОНТЕЙНЕР (центр + правая колонка) -->
+    <div class="main-content">
 
-            <header class="ax-header">
-                <a href="#" class="ax-back-link">← Тест</a>
-            </header>
-
-            <!-- КОНТЕЙНЕР ВОПРОСА (Заполняется JS) -->
-            <div id="quiz-area" class="ax-quiz-area">
-                <!-- Сюда JS вставит заголовок, вопрос и варианты -->
+        <!-- ЦЕНТРАЛЬНАЯ КОЛОНКА (скроллится) -->
+        <main class="ax-center-scroll">
+            <!-- 1. БЛОК ТЕСТА (Виден сразу) -->
+            <div id="view-quiz">
+                <header class="ax-header">
+                    <a href="#" class="ax-back-link">← Тест</a>
+                </header>
+                <!-- Сюда JS будет вставлять вопросы -->
+                <div id="quiz-area"></div>
             </div>
 
-            <!-- Футер (внутри скролла) -->
-            <footer class="ax-footer">
-                <div class="ax-logo-lg">axis</div>
-                <div class="ax-footer-text">ТВОЙ ОРИЕНТИР В МИРЕ ПРОФЕССИЙ ⟶</div>
-                <div class="ax-footer-btns">
-                    <a href="#" class="ax-btn-black">РАССЫЛКА →</a>
-                    <a href="#" class="ax-btn-black">ТГ КАНАЛ →</a>
+            <!-- 2. БЛОК РЕЗУЛЬТАТА (Скрыт по умолчанию) -->
+            <div id="view-result" class="hidden">
+                <div class="ax-title-wrap">
+                    <span class="ax-brace">[</span> Твой результат <span class="ax-brace">]</span>
                 </div>
-            </footer>
-        </div>
-    </main>
 
-    <!-- ПРАВАЯ КОЛОНКА (Рубрикатор) -->
-    <aside class="ax-sidebar-right">
-        <!-- Сетка навигации -->
-        <div class="ax-rubricator" id="rubricator">
-            <!-- Генерируется JS -->
-        </div>
-    </aside>
+                <div class="ax-res-item">
+                    <div class="ax-res-header">1. IT: 85%</div>
+                    <p class="ax-res-desc">Ты мыслишь, как инженер цифрового мира: аналитический склад ума и внимание к деталям. Тебе будут интересны системы, алгоритмы и создание рабочих решений из кода..</p>
+                    <p class="ax-res-profs"><span class="ax-link-u">Front-end</span>, <span class="ax-link-u">Data Scientist</span>, <span class="ax-link-u">DevOps-инженер</span>, <span class="ax-link-u">Кибербезопасность</span></p>
+                    <button class="ax-res-btn btn-blue">ПЕРЕЙТИ В КАТАЛОГ ➔</button>
+                </div>
 
+                <div class="ax-res-item">
+                    <div class="ax-res-header">2. Точные науки: 70%</div>
+                    <p class="ax-res-desc">Тебе важны чёткие законы, модели и доказательства. Ты любишь докопаться до сути явлений и работать
+                        с объективными данными.</p>
+                    <p class="ax-res-profs"><span class="ax-link-u">Физик-исследователь</span>, <span class="ax-link-u">Химик-технолог</span>, <span class="ax-link-u">Математик</span>, <span class="ax-link-u">Криптограф</span></p>
+                    <button class="ax-res-btn btn-green">ПЕРЕЙТИ В КАТАЛОГ ➔</button>
+                </div>
+
+                <div class="ax-res-item">
+                    <div class="ax-res-header">3. Строительство: 60% </div>
+                    <p class="ax-res-desc">Ты ценишь порядок, практичность и осязаемый результат. Тебе нравится превращать проекты в реальные, полезные объекты.</p>
+                    <p class="ax-res-profs"><span class="ax-link-u">Инженер-проектировщик</span>, <span class="ax-link-u">Архитектор</span>, <span class="ax-link-u">Прораб</span>, <span class="ax-link-u">BIM-менеджер</span></p>
+                    <button class="ax-res-btn btn-green">ПЕРЕЙТИ В КАТАЛОГ ➔</button>
+                </div>
+
+
+            </div>
+        </main>
+
+        <!-- ПРАВАЯ ФИКСИРОВАННАЯ КОЛОНКА (всегда справа) -->
+        <aside class="ax-sidebar-right">
+            <!-- 1. БЛОК РУБРИКАТОРА (Виден сразу) -->
+            <div id="sidebar-quiz">
+                <div class="ax-rubricator" id="rubricator"></div>
+            </div>
+
+            <!-- 2. БЛОК ВИДЖЕТА (Скрыт по умолчанию) -->
+            <div id="sidebar-result" class="hidden">
+                <div class="ax-decor-wrapper" style="height: 150px; position: relative;">
+                    <div style="font-size:40px; position:absolute; top:20px; left:20px;">🔷</div>
+                    <div style="font-size:40px; position:absolute; top:40px; right:20px;">🔨</div>
+                </div>
+                <div class="ax-widget-result">
+                    <div class="ax-widget-header-pill">поле для заметок:</div>
+                    <br>↓<br>
+                    <div class="ax-widget-pill-white">сохрани результат</div>
+                    <br>
+                    <button class="ax-widget-btn-black">СОХРАНИТЬ ➔</button>
+                </div>
+            </div>
+        </aside>
+    </div>
 </div>
 
+<!-- JS для этой страницы -->
+<script src="../../e389aa21f3cc7b57fbcd.js"></script>
 </body>
 </html>

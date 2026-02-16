@@ -4,33 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffedfc87-9936-48b7-81e5-913e644e7eda" name="Changes" comment="">
+    <list default="true" id="ffedfc87-9936-48b7-81e5-913e644e7eda" name="Changes" comment="123456789">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.pages.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/images/55b2f40877c9f7f12db7.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/images/6687ed3099663c082f51.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/images/9be1870208f7a0f1575a.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/search/search1.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/test/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/test/test1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/styleguide.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/styleguide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/styleguide.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/styleguide.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/styleguide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/styleguide.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/styleguide.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styleguide.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/it.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/it.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/category/marketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/test1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/search/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/search1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/search/search2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/search2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/test/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styleguide.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/styleguide.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,11 +86,51 @@
       <workItem from="1770650395057" duration="1200000" />
       <workItem from="1770810401508" duration="3313000" />
       <workItem from="1770928343594" duration="4932000" />
-      <workItem from="1771239896170" duration="16759000" />
+      <workItem from="1771239896170" duration="31469000" />
     </task>
+    <task id="LOCAL-00001" summary="123456789">
+      <option name="closed" value="true" />
+      <created>1771271237374</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771271237374</updated>
+    </task>
+    <task id="LOCAL-00002" summary="123456789">
+      <option name="closed" value="true" />
+      <created>1771271258434</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771271258434</updated>
+    </task>
+    <task id="LOCAL-00003" summary="123456789">
+      <option name="closed" value="true" />
+      <created>1771271519183</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1771271519183</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="123456789" />
+    <option name="LAST_COMMIT_MESSAGE" value="123456789" />
   </component>
 </project>
