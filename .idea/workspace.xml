@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffedfc87-9936-48b7-81e5-913e644e7eda" name="Changes" comment="3333333333333" />
+    <list default="true" id="ffedfc87-9936-48b7-81e5-913e644e7eda" name="Changes" comment="Merge branch 'main' of https://github.com/HSEADC/codiki">
+      <change afterPath="$PROJECT_DIR$/dev_build/fonts/cb7b4b1e0f58e2a6b10e.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/fonts/bc17bd9624a2c3ea0116.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/category/it.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/category/it.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/test/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/test/test1.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,6 +95,7 @@
       <workItem from="1770810401508" duration="3313000" />
       <workItem from="1770928343594" duration="4932000" />
       <workItem from="1771239896170" duration="31988000" />
+      <workItem from="1771273010090" duration="1197000" />
     </task>
     <task id="LOCAL-00001" summary="123456789">
       <option name="closed" value="true" />
@@ -163,6 +174,7 @@
     <MESSAGE value="123456789" />
     <MESSAGE value="2222222222222" />
     <MESSAGE value="3333333333333" />
-    <option name="LAST_COMMIT_MESSAGE" value="3333333333333" />
+    <MESSAGE value="Merge branch 'main' of https://github.com/HSEADC/codiki" />
+    <option name="LAST_COMMIT_MESSAGE" value="Merge branch 'main' of https://github.com/HSEADC/codiki" />
   </component>
 </project>
