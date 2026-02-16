@@ -6,14 +6,44 @@
   <component name="ChangeListManager">
     <list default="true" id="ffedfc87-9936-48b7-81e5-913e644e7eda" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/css/font.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/font.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.common.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.pages.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.pages.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/images/55b2f40877c9f7f12db7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/images/6687ed3099663c082f51.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/images/9be1870208f7a0f1575a.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/search/search1.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/pages/test/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/test/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/styleguide.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/styleguide.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/styleguide.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/styleguide.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev_build/styleguide.js" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/styleguide.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/css/styleguide.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/styleguide.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/it.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/it.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/category/marketing.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/test1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/search/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/search/search1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/search/search2.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/category/search2.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/test/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/test/test1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styleguide.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/styleguide.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,6 +71,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.category.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -77,7 +109,9 @@
       <workItem from="1770470701423" duration="19000" />
       <workItem from="1770641199743" duration="2000" />
       <workItem from="1770650395057" duration="1200000" />
-      <workItem from="1770810401508" duration="1969000" />
+      <workItem from="1770810401508" duration="3313000" />
+      <workItem from="1770928343594" duration="4932000" />
+      <workItem from="1771239896170" duration="16759000" />
     </task>
     <servers />
   </component>

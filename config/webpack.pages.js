@@ -14,7 +14,7 @@ const htmlPages = [
   createPages('./src/pages/test.html', './pages/test.html', ['index']),
   createPages('./src/pages/category.html', './pages/category.html', ['index']),
   createPages('./src/pages/test/test1.html', './pages/test/test1.html', ['index']),
-  createPages('./src/pages/search/search1.html', './pages/search/search1.html', ['index']),
+  createPages('./src/pages/category/it.html', './pages/category/it.html', ['index']),
   createPages('./src/styleguide.html', './styleguide.html', ['styleguide'])
 ]
 
