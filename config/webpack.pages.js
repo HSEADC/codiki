@@ -1,22 +1,21 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
-function createPages(template, filename) {
+function createPages(template, filename, chunks) {
   return new HtmlWebpackPlugin({
     template: template,
     filename: filename,
-  });
+    chunks: chunks
+  })
 }
 
 const htmlPages = [
-  createPages("./src/index.html", "./index.html"),
-  createPages("./src/pages/articles.html", "./pages/articles.html"),
-  createPages("./src/pages/tests.html", "./pages/tests.html"),
-  createPages("./src/pages/dictionary.html", "./pages/dictionary.html"),
-  createPages(
-    "./src/pages/articles/plants.html",
-    "./pages/articles/plants.html"
-  ),
-  createPages("./src/pages/tests/test1.html", "./pages/tests/test1.html"),
-];
+  createPages('./src/index.html', './index.html', ['index']),
+  createPages('./src/pages/about.html', './pages/about.html', ['index']),
+  createPages('./src/pages/test.html', './pages/test.html', ['index']),
+  createPages('./src/pages/category.html', './pages/category.html', ['index']),
+  createPages('./src/pages/test/test1.html', './pages/test/test1.html', ['index']),
+  createPages('./src/pages/category/it.html', './pages/category/it.html', ['index']),
+  createPages('./src/styleguide.html', './styleguide.html', ['styleguide'])
+]
 
-module.exports = htmlPages;
+module.exports = htmlPages
