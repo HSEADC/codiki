@@ -13,7 +13,7 @@ import humanitarianImg from '../images/humanitarian.webp';
 import constructionImg from '../images/construction.webp';
 import educationImg from '../images/education.webp';
 import ecoImg from '../images/eco.webp';
-import computerImg from '../images/comp.webp';
+import computerImg from '../images/comp.png';
 
 
 const images = {

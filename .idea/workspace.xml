@@ -4,17 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ffedfc87-9936-48b7-81e5-913e644e7eda" name="Changes" comment="Merge branch 'main' of https://github.com/HSEADC/codiki">
-      <change afterPath="$PROJECT_DIR$/dev_build/fonts/cb7b4b1e0f58e2a6b10e.otf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/fonts/bc17bd9624a2c3ea0116.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/category.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/category/it.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/category/it.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev_build/pages/test/test1.html" beforeDir="false" afterPath="$PROJECT_DIR$/dev_build/pages/test/test1.html" afterDir="false" />
-    </list>
+    <list default="true" id="90929b0c-70ec-4cb8-bad3-85ea2f3c6440" name="Changes" comment="Merge branch 'main' of https://github.com/HSEADC/codiki" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +19,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="gh-pages" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
