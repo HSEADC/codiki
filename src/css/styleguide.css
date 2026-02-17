@@ -1,15 +1,22 @@
+<<<<<<< HEAD
 /*
    НОВЫЙ ФАЙЛ СТИЛЕЙ ДЛЯ СТАЙЛГАЙДА
    Использует уникальные имена классов (sg-...)
 */
 
 /* Сброс для этого файла */
+=======
+
+>>>>>>> main
 .sg-body {
     margin: 0;
     padding: 0;
     background-color: #fff;
     color: #000;
+<<<<<<< HEAD
     /* Используем шрифты проекта */
+=======
+>>>>>>> main
     font-family: 'Akzidenzgroteskpro', sans-serif;
     font-weight: 400;
     box-sizing: border-box;
@@ -19,7 +26,11 @@
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 /* ОСНОВНАЯ СЕТКА: ЛЕВО (250px) - ЦЕНТР (auto) - ПРАВО (200px) */
+=======
+
+>>>>>>> main
 .sg-wrapper {
     display: grid;
     grid-template-columns: 250px 1fr 200px;
@@ -28,7 +39,10 @@
     margin: 0 auto;
 }
 
+<<<<<<< HEAD
 /* --- ЛЕВАЯ ПАНЕЛЬ (ФИКСИРОВАННАЯ) --- */
+=======
+>>>>>>> main
 .sg-sidebar-left {
     position: sticky;
     top: 0;
@@ -50,7 +64,11 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+<<<<<<< HEAD
     margin-top: -100px; /* Визуальная компенсация */
+=======
+    margin-top: -100px;
+>>>>>>> main
 }
 
 .sg-nav-link {
@@ -67,7 +85,11 @@
     opacity: 0.6;
 }
 
+<<<<<<< HEAD
 /* Стиль активной ссылки [ О НАС ] */
+=======
+
+>>>>>>> main
 .sg-active {
     display: flex;
     align-items: center;
@@ -75,7 +97,11 @@
 .sg-bracket {
     margin: 0 4px;
     transform: translateY(-2px);
+<<<<<<< HEAD
     font-family: 'Drukewidecyr', sans-serif; /* Скобки тем же шрифтом */
+=======
+    font-family: 'Drukewidecyr', sans-serif;
+>>>>>>> main
 }
 
 .sg-footer-text {
@@ -87,7 +113,11 @@
 }
 
 
+<<<<<<< HEAD
 /* --- ПРАВАЯ ПАНЕЛЬ (ФИКСИРОВАННАЯ) --- */
+=======
+
+>>>>>>> main
 .sg-sidebar-right {
     position: sticky;
     top: 0;
@@ -100,7 +130,11 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+<<<<<<< HEAD
     border-left: 1px solid #f0f0f0; /* Тонкая линия разделитель */
+=======
+    border-left: 1px solid #f0f0f0;
+>>>>>>> main
     padding-left: 20px;
 }
 
@@ -110,7 +144,11 @@
     font-family: 'Drukewidecyr', sans-serif;
     font-weight: 800;
     font-size: 13px;
+<<<<<<< HEAD
     border-bottom: 2px solid #000; /* Подчеркивание как на макете */
+=======
+    border-bottom: 2px solid #000;
+>>>>>>> main
     width: fit-content;
     line-height: 1.2;
 }
@@ -119,7 +157,11 @@
 }
 
 
+<<<<<<< HEAD
 /* --- ЦЕНТРАЛЬНЫЙ КОНТЕНТ (СКРОЛЛ) --- */
+=======
+
+>>>>>>> main
 .sg-content {
     padding: 40px 60px 80px 40px;
     border-left: 1px solid transparent;
@@ -169,14 +211,22 @@
 }
 
 
+<<<<<<< HEAD
 /* --- СЕТКА КАРТОЧЕК (3 КОЛОНКИ) --- */
+=======
+
+>>>>>>> main
 .sg-cards-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 40px;
 }
 
+<<<<<<< HEAD
 /* Центрирование последнего элемента в сетке */
+=======
+
+>>>>>>> main
 .sg-card-center {
     grid-column: 2 / 3;
 }
@@ -191,7 +241,11 @@
     min-height: 250px;
 }
 
+<<<<<<< HEAD
 /* Декоративные уголки (цвет задается через класс) */
+=======
+
+>>>>>>> main
 .sg-card-corners {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
@@ -200,7 +254,11 @@
     pointer-events: none;
 }
 
+<<<<<<< HEAD
 /* Иконка-заглушка */
+=======
+
+>>>>>>> main
 .sg-card-icon {
     height: 120px;
     display: flex;
@@ -238,7 +296,10 @@
 .sg-lime   { color: #9cd75d; } .sg-bg-lime { } .sg-border-lime { border-color: #9cd75d; }
 
 
+<<<<<<< HEAD
 /* --- ТИПОГРАФИКА --- */
+=======
+>>>>>>> main
 .sg-typo-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -290,7 +351,10 @@
 .sg-abc-reg { font-family: 'Akzidenzgroteskpro', sans-serif; }
 
 
+<<<<<<< HEAD
 /* --- ЛОГОТИП --- */
+=======
+>>>>>>> main
 .sg-logo-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -316,7 +380,11 @@
 }
 
 
+<<<<<<< HEAD
 /* --- СЕТКА (GRID VISUAL) --- */
+=======
+
+>>>>>>> main
 .sg-grid-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -331,7 +399,11 @@
 }
 
 
+<<<<<<< HEAD
 /* --- ФУТЕР --- */
+=======
+
+>>>>>>> main
 .sg-bottom-area {
     margin-top: 100px;
     border-top: 2px solid #000;

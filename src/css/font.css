@@ -1,7 +1,12 @@
 @font-face {
   font-family: 'Akzidenzgroteskpro';
+<<<<<<< HEAD
   src: url('../fonts/akzidenzgroteskpro_regular.ttf'),
     url('../fonts/akzidenzgroteskpro_regular.ttf');
+=======
+  src: url('../fonts/akzidenzgroteskpro_ext.otf'),
+    url('../fonts/akzidenzgroteskpro_ext.otf');
+>>>>>>> main
   font-weight: 400;
 }
 

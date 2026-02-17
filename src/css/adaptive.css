@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @media (max-width: 900px) {
     .about-layout {
         flex-direction: column;
@@ -490,3 +491,45 @@
     font-size: 30px;
     font-weight: 300;
 }
+=======
+@media (max-width: 1024px) {
+            .categories-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+            
+            .hero h1 {
+                font-size: 36px;
+            }
+            
+            .catalog-title {
+                font-size: 28px;
+            }
+            
+            .categories-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
+            
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+>>>>>>> main

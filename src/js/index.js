@@ -3,6 +3,7 @@ import '../css/style.css'
 console.log('hey')
 
 
+<<<<<<< HEAD
 import itImg from '/images/it.webp';
 import marketingImg from '/images/marketing.webp';
 import creativeImg from '/images/creative.webp';
@@ -14,6 +15,19 @@ import constructionImg from '/images/construction.webp';
 import educationImg from '/images/education.webp';
 import ecoImg from '/images/eco.webp';
 import computerImg from '/images/computer.webp';
+=======
+import itImg from '../images/it.webp';
+import marketingImg from '../images/marketing.webp';
+import creativeImg from '../images/creative.webp';
+import medicineImg from '../images/medicine.webp';
+import financeImg from '../images/finance.webp';
+import accurateImg from '../images/accurate.webp';
+import humanitarianImg from '../images/humanitarian.webp';
+import constructionImg from '../images/construction.webp';
+import educationImg from '../images/education.webp';
+import ecoImg from '../images/eco.webp';
+import computerImg from '../images/comp.png';
+>>>>>>> main
 
 
 const images = {
