@@ -12,9 +12,10 @@ module.exports = {
     styleguide: "./src/js/styleguide.js",
     test: "./src/js/test1.js",
   },
+
   output: {
     filename: "[name].js",
-    path: path.resolve(process.cwd(), "docs"),
+    path: path.resolve(".", "docs"),
   },
   module: {
     rules: [
